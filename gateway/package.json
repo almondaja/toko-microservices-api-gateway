@@ -1,0 +1,14 @@
+{
+  "name": "toko-api-gateway",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API Gateway untuk product-service dan order-service",
+  "main": "gateway.js",
+  "scripts": {
+    "start": "node gateway.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.3"
+  }
+}
