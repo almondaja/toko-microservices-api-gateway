@@ -41,4 +41,4 @@ app.post('/products/:id/reserve', (req, res) => {
 });
 
 const PORT = Number(process.env.PORT || 3000);
-app.listen(PORT, () => console.log(`product-service berjalan di port ${PORT}`));
+app.listen(PORT, process.env.HOST || '0.0.0.0', () => console.log(`product-service berjalan di port ${PORT}`));

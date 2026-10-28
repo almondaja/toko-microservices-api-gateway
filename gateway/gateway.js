@@ -73,4 +73,4 @@ app.get('/', (req, res) => {
 });
 
 const PORT = Number(process.env.PORT || 8080);
-app.listen(PORT, () => console.log(`API Gateway berjalan di port ${PORT}`));
+app.listen(PORT, process.env.HOST || '0.0.0.0', () => console.log(`API Gateway berjalan di port ${PORT}`));

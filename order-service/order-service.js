@@ -62,4 +62,4 @@ app.get('/orders', (req, res) => {
 });
 
 const PORT = Number(process.env.PORT || 3001);
-app.listen(PORT, () => console.log(`order-service berjalan di port ${PORT}`));
+app.listen(PORT, process.env.HOST || '0.0.0.0', () => console.log(`order-service berjalan di port ${PORT}`));
